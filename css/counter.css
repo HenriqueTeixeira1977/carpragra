@@ -75,13 +75,15 @@ body{
 }
 
 .time{
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.898);
     width: 150px;
     margin: 5px;
     padding: 15px;
     color: rgb(255, 255, 255);
     text-align: center;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px 1px #0000005f;
+
 }
 .time h2{
     font-size: 30px;
@@ -102,6 +104,7 @@ a {
     font-size: larger;
     text-transform: uppercase;
     font-weight: 500;
+    box-shadow: 3px 4px 5px 6px #00000044;
 }
 a:hover{
     background:rgb(255, 255, 255);
@@ -124,7 +127,7 @@ a:hover{
         font-weight: 400;
     }
     .countdown{
-        background-color: rgba(0, 0, 0, 0.183);
+        background-color: rgba(0, 0, 0, 0);
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -154,6 +157,9 @@ a:hover{
     .time small{
         font-size: 20px;
         color: black;
+    }
+    a {
+        padding: 12px 120px;
     }
     
 }
