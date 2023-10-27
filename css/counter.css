@@ -22,18 +22,20 @@ body{
     justify-content: center;
     align-items: center;
     margin: auto;
+    width: 100vw;
     height: 100vh;
     
 }
+
 .container{
     background-color: rgba(22, 22, 22, 0.535);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 90%;
-    height: 90vh;
-    margin-top: 3%;
+    width: 95vw;
+    height: 98vh;
+    margin-top: 0%;
     border-radius: 10px;
 }
 .container h1{
@@ -61,17 +63,18 @@ body{
 }
 
 .countdown{
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 0, 0, 0.465);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50%;
-    width: 90%;
-    margin: 10px 50px;
-    padding: 50px 0;
+    height: 100%;
+    width: 95%;
+    margin: 0px 0px;
+    padding: 10px 0;
     border-radius: 10px;
 }
+
 .time{
     background-color: rgb(0, 0, 0);
     width: 150px;
@@ -94,7 +97,7 @@ body{
 a {
     background: rgb(255, 196, 0);
     padding: 20px 50px;
-    margin-top: 10%;
+    margin: 5px;
     border: #ffffff solid 3px;
     border-radius: 10px;
     color: rgb(0, 0, 0);
