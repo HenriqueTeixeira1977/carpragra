@@ -28,15 +28,15 @@ body{
 }
 
 .container{
-    background-color: rgba(22, 22, 22, 0.535);
+    background-color: rgba(22, 22, 22, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: 95vw;
-    height: 98vh;
+    flex-direction: column; 
+    width: 100vw;
+    height: 100vh;
     margin-top: 0%;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 .container h1{
     color: white;
