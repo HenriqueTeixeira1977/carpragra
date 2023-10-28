@@ -13,6 +13,7 @@
     scroll-behavior: smooth;
     transition: all .3s ease;    
 }
+
 body{
     background-image: url("../img/bg-counter.png");
     background-size: cover;
@@ -23,12 +24,11 @@ body{
     align-items: center;
     margin: auto;
     width: 100vw;
-    height: 100vh;
-    
+    height: 100vh;    
 }
 
 .container{
-    background-color: rgba(22, 22, 22, 0.8);
+    background-color: rgba(22, 22, 22, 0.777);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,7 +82,7 @@ body{
     color: rgb(255, 255, 255);
     text-align: center;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px 1px #0000005f;
+    box-shadow: 5px 5px 5px 1px #ffffff85;
 
 }
 .time h2{
@@ -151,8 +151,9 @@ a:hover{
         border-radius: 10px;
     }
     .time h2{
-        font-size: 70px;
-        font-weight: 500;
+        font-size: 80px;
+        font-weight: 200;
+        text-shadow: 5px 5px 5px #000;
     }
     .time small{
         font-size: 20px;
