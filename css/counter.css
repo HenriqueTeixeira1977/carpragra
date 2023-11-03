@@ -115,7 +115,7 @@ a:hover{
 
 /*  Tablet - Desktop  */
 
-@media screen and (min-width: 769px) and (max-width: 1980px){
+@media screen and (min-width: 769px) and (max-width: 1920px){
     .container h1{
         font-size: 50px;
     }
