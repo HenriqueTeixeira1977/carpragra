@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*  Mobile First  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+    scroll-behavior: smooth;
+    transition: all .3s ease;
+}
+body{
+    background: rgb(75, 75, 75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 400px 0;
+    text-align: center;
+    color: white;
+}
+header{background: green;
+    width: 100vw;
+    height: 10px;
+}
+main{background: yellow;
+    width: 100vw;
+    height: 10px;
+}
+footer{background: blue;
+    width: 100vw;
+    height: 10px;
+    
+}
