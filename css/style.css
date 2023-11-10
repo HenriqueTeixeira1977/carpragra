@@ -116,7 +116,7 @@ header.sticky .btn{
     color: rgb(85, 85, 85);
 }
 header.sticky .logotipo{
-    color: var(--azul);
+    color: var(--amarelo);
 }
 header .menu.active{
     right: 0;
@@ -170,11 +170,12 @@ header .button {
     height: 60px;
 }
 .logo a img{ /*background: #29A71A;*/
+    display: none;
     max-width: 50px;
     margin: 30px 0;
 }
-.logotipo{ background: red;
-    display: none;
+.logotipo{ background: rgba(255, 0, 0, 0);
+    display: flex;
     font-size: var(--fontam3);
     color: var(--branco);
     margin: 0 5px;
