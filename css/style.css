@@ -77,8 +77,8 @@ body{background: #000000;
     padding: 0;
 }
 :root{
-    --azul: #686868;
-    --amarelo: #FFD401;
+    --cinza: #4A4A4A;
+    --laranja: #FFC400;
     --verde: #29A71A;
     --preto: #000000;
     --branco: #FFFFFF;  
@@ -107,27 +107,35 @@ header{background: rgb(0, 0, 0);
 }
 header.sticky{
     height: 70px;
-    background: var(--preto);
-    box-shadow: 0px 5px 5px 0px #00000077;
-    border-bottom: #ffcc00 solid 5px;
+    background: rgb(0, 0, 0);
+    box-shadow: 0px 5px 5px 0px #00000034;
+    border-bottom: var(--laranja) solid 5px;
     transition: all .2s ease;
 }
 header.sticky .btn{
     color: rgb(85, 85, 85);
 }
 header.sticky .logotipo{
-    color: var(--amarelo);
+    font-size: 20px;
+    color: var(--laranja);
+}
+header.sticky .logotipo span{
+    font-size: 30px;
+    color: var(--branco);
 }
 header .menu.active{
     right: 0;
 }
 header .menu .close-btn{
-    color: #ffffff;
+    color: var(--branco);
     position: absolute;
     top: 0;
-    left: 90%;
-    margin: 20px 0px 0px 0px;
+    left: 50%;
+    margin: auto;
+    padding: 50px 0px 00px 00px;
 }
+
+
 header nav{
     position: fixed;
     background: #000000e6;
@@ -148,11 +156,11 @@ header nav a {
     font-size: 2rem;
     margin: 5px;
     padding: 0 15px;
-    color: var(--amarelo);
+    color: var(--laranja);
     font-weight: 500;
 }
 header nav a:hover {
-    color: var(--amarelo);
+    color: var(--laranja);
 }
 header .button {
     display: none;
@@ -160,7 +168,7 @@ header .button {
 .btn{
     display: block;
     font-size: var(--fontam4);
-    color: var(--amarelo);
+    color: var(--laranja);
 }
 .logo { /*background: rebeccapurple;*/
     display: flex;
@@ -182,7 +190,7 @@ header .button {
     line-height: 1;
 }
 .logotipo span{
-    color: var(--amarelo);
+    color: var(--laranja);
 }
 nav a{ 
     display: none;    
@@ -205,18 +213,20 @@ nav a{
 /*  Fim do Main  */
 /*  *************************************************** */
 /*  Inicio do Home  */
-.home{ background: rgb(123, 123, 123);
-    background: url(../img/bg1-home-mbl.webp);
+.home{ background: rgb(0, 0, 0);
+    /*background: url(../img/bg1-home-mbl.webp);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
+    flex-direction: row;
+    width: 95vw;
+    height: 98vh;
+    margin: auto;
 }
-.home .container{background: rgba(255, 0, 0, 0);
+.home .container{background: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,44 +240,46 @@ nav a{
     border-radius: 10px;
 }
 .home .container aside img{background: rgb(255, 207, 62);
-    max-width:50vw;
     width: 100%;
     height: 100%;
     margin: auto;    
-    padding: 20px;
+    padding: 50px 12px;
 
-    border-radius: 10px;
+    border-radius: 5px;
 }
-.home .container article{background: rgba(255, 0, 0, 0);
+.home .container article{/*background: rgba(255, 196, 0, 0.416);*/
     margin: 20px 0;
-    padding: 20px 10px;
+    padding:20px 10px;
     width: 100%;
-    height: 400px;
+    height: 450px;
     text-align: center;
     color: var(--branco);
-
+/*
     border: 2px solid #ffae00;
     border-radius: 10px;
     box-shadow: 5px 5px 15px 5px rgba(255, 238, 0, 0.551);
-
+*/
 }
 .home .container article h1{      
     font-size: var(--fontam6);
     font-weight: 200;
     line-height: 1; 
+    margin: 20px;
 }
 .home .container article h1 span{      
-    color: var(--amarelo);
+    color: var(--laranja);
 }
 .home .container article h2{
-    font-size: var(--fontam2);      
+    font-size: var(--fontam2);  
+    font-weight: 200;
+    
 }
 .home .container article h3{
     font-size: var(--fontam3);    
     margin-bottom: 30px;    
 }
 .home .container .btn-wa a{
-    color: #FFFFFF;
+    color: var(--branco);
 }
 .home .container .btn-wa {
     background: var(--verde);
@@ -302,18 +314,18 @@ nav a{
     height: 300px;
     text-align: center;
     padding: 10%;
-    background: #fffefe26;
+    background: var(--preto);
 }
 .home2 h1{
-    color: var(--azul);
+    color: var(--branco);
     font-size: var(--fontam4);
     margin: 10px 0;        
 }
 .home2 h1 span{
-    color: var(--amarelo);
+    color: var(--laranja);
 }
 .home2 p{
-    color: var(--azul);
+    color: var(--branco);
 }
 /*  Fim do Home2  */
 /*  *************************************************** */
