@@ -92,7 +92,7 @@ body{background: #e4e4e4;
 /*  Fim do Body  */
 /*  *************************************************** */
 /*  Inicio do Main / Header  */
-header{background: #bdbdbd;  
+header{background: #000000;  
     z-index: 999;
     position: fixed;
     top: 0;
@@ -216,16 +216,16 @@ nav a{
     width: 100%;
     height: 100vh;
 }
-.home .container{background: rgba(20, 20, 20, 0.876);
+.home .container{background: rgba(255, 0, 0, 0.876);
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-direction: column-reverse;
     text-align: center;
     margin: auto;
-    padding: 50px 0;
+    padding: 0px 0;
     width: 90%;
-    height: 70%;
+    height: 700px;
     border-radius: 10px;
 }
 .home .container aside img{
