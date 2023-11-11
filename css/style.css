@@ -223,7 +223,7 @@ nav a{
     align-items: center;
     flex-direction: row;
     width: 95vw;
-    height: 98vh;
+    height: 100vh;
     margin: auto;
 }
 .home .container{background: rgb(0, 0, 0);
@@ -305,32 +305,38 @@ nav a{
 /*  Fim do Home  */
 /*  *************************************************** */
 /*  Inicio do Home2  */
-.home2 {
+.home2 { background: rgb(231,231,231);
+    background: linear-gradient(0deg, rgb(117, 117, 117) 0%, rgba(0,0,0,1) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
-    height: 300px;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    padding: 0 50px;
     text-align: center;
-    padding: 10%;
-    background: var(--preto);
+    /*background: var(--preto);*/
 }
 .home2 h1{
     color: var(--branco);
-    font-size: var(--fontam4);
-    margin: 10px 0;        
+    font-size: var(--fontam6);
+    font-weight: 200;
+    margin: 50px 0;        
 }
 .home2 h1 span{
     color: var(--laranja);
 }
 .home2 p{
+    font-size: var(--fontam3);
     color: var(--branco);
 }
 /*  Fim do Home2  */
 /*  *************************************************** */
 /*  Inicio do Soluções  */
-.solucoes{background: #eeeeee65;
+.solucoes{
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(117,117,117,1) 100%);
+
     display:flex;
     justify-content: center;
     align-items: center;
@@ -339,12 +345,12 @@ nav a{
     height: auto;
 }
 .solucoes h1{
-    font-size: var(--fontam4);
-    color: var(--azul);
+    font-size: var(--fontam6);
+    color: var(--preto);
     margin-top: 88px;
 }
 .solucoes h1 span{
-    color: var(--amarelo);
+    color: var(--laranja);
 }
 .solucoes .container{
     display: flex;
@@ -353,15 +359,16 @@ nav a{
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    height: auto;
+    height:;
     margin: auto;  
     padding: 0 10px;  
 }
-.solucoes .container .box{
+.solucoes .container .box{ background: #8f8f8f;
     background: var(--branco);
     max-width: 500px;
-    margin: 30px 0;
-    padding: 30px;
+    width: 350px;
+    margin: 20px 0;
+    padding: 20px;
     border-radius: 10px;
     border: 2px solid rgba(0, 0, 140, 0.078);
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.212);
@@ -393,7 +400,7 @@ nav a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgb(247, 247, 247);
+    background: rgb(255, 255, 255);
     height: 100vh;
     padding: 80px 0 0 0;
 }
@@ -478,13 +485,13 @@ nav a{
 /*  Fim do Depoimentos  */
 /*  *************************************************** */
 /*  Inicio do Sobre  */
-.sobre{
+.sobre{background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(231,231,231,1) 100%);
+
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: #ffd50189;
     padding: 5%;
     text-align: center;
 }
@@ -514,7 +521,8 @@ nav a{
 /*  Fim do Sobre  */
 /*  *************************************************** */
 /*  Inicio do Contatos  */
-.contatos{
+.contatos{background: #4A4A4A;
+    background: linear-gradient(180deg, rgba(231,231,231,1) 0%, rgba(0,0,0,1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -530,18 +538,19 @@ nav a{
     font-size: var(--fontam6);
     line-height: 1;
     margin: 30px 0;
-    color: var(--azul);
+    color: var(--branco);
 }
 .contatos .container p{
     margin: 10px 0;
     font-size: var(--fontam1);
     line-height: .8;
+    color: var(--laranja);
 } 
 .contatos .container .redes{display: none;
     font-size: var(--fontam4);
 }
 .contatos .btn-wa a{
-    margin: 50px 0;
+    margin: 100px 0;
     padding: 10px 50px;
     background: var(--verde);
     font-size: var(--fontam2);
@@ -560,17 +569,21 @@ footer{
     width: 100%;
     height: 350px;
     margin: auto;
-    padding: 30px;
-    font-size: var(--fontam1);
+    padding: 20px;
+    font-size: 11px;
     text-align: center;
     color: var(--branco);
-    background: var(--azul);
+    background: var(--preto);
 }
 footer .menu-footer a{display: none;
     color: var(--amarelo);
 }
-footer img{
-    width: 100px;        
+footer img{background: rgb(255, 217, 0);
+    width: 100px;     
+    height: 100px;
+    margin: auto;
+    padding: auto;
+    border-radius: 5px;
 }
 footer .rodape a{
     color: var(--amarelo);
