@@ -403,16 +403,16 @@ nav a{
     align-items: center;
     flex-direction: column;
     background: rgb(255, 255, 255);
-    height: 100vh;
+    height: 150vh;
     padding: 80px 0 0 0;
 }
-.trabalhos-titulo{/* background: red;  */
+.trabalhos-titulo{
     width: 90%;
     height: 50px;
     margin: auto;
     padding: 15px;
     font-size: var(--fontam4);
-    color: var(--azul);
+    color: var(--cinza);
     text-align: center;
 }
 .trabalhos-titulo h1{
@@ -424,7 +424,10 @@ nav a{
     color: var(--laranja);
 }
 .trabalhos-titulo p{
-    font-size: 20px;
+    margin: 10px 0;
+    padding: 0px 0;
+    font-size: 18px;
+    line-height: 1;
 }/*
 .trabalhos .container-galeria{ background: yellow;   
     display: flex;
@@ -438,13 +441,14 @@ nav a{
     margin: auto;
 }
 */
-.trabalhos .container-galeria{background: yellow;
+.trabalhos .container-galeria{
     display: flex;
     /*flex-wrap: wrap;*/
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     gap: 5vw;
+    margin-top: 150px;
     padding: 0 1vw;
     width: 90%;
     height: 80%;
@@ -512,7 +516,7 @@ nav a{
 }
 .sobre article h1{
     font-size: var(--fontam6);
-    color: var(--azul);
+    color: var(--cinza);
     line-height: 1;
 }
 .sobre article h2{
@@ -520,6 +524,7 @@ nav a{
 }
 .sobre article p{
     margin: 10px 0 50px 0;
+    font-size: var(--fontam2);
 }
 .sobre article a{
     background: var(--verde);
@@ -546,8 +551,15 @@ nav a{
     text-align: center;
     padding: 30px;
 }
-.txt-container{
+.contatos .contatos-txt p{
+    font-size: var(--fontam2);
+    color: var(--preto);
+    line-height: 1;
+    margin-top: 5px;
+}
+.contatos .txt-container{
     margin: 30px;
+    font-size: var(--fontam1);
 }
 .contatos .container h1{
     font-size: var(--fontam6);
