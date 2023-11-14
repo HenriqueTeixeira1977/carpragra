@@ -239,11 +239,11 @@ nav a{
     height: 80%;
     border-radius: 10px;
 }
-.home .container aside img{background: rgb(255, 207, 62);
+.home .container aside img{background: rgba(255, 207, 62, 0);
     width: 100%;
     height: 100%;
     margin: auto;    
-    padding: 50px 12px;
+    padding: 0px 0px;
 
     border-radius: 5px;
 }
@@ -271,8 +271,7 @@ nav a{
 }
 .home .container article h2{
     font-size: var(--fontam2);  
-    font-weight: 200;
-    
+    font-weight: 200;    
 }
 .home .container article h3{
     font-size: var(--fontam3);    
@@ -588,13 +587,13 @@ nav a{
 /*  Fim do Contatos  */
 /*  *************************************************** */
 /*  Inicio do Footer  */
-footer{
+footer{background: var(--verde);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 350px;
+    height: 250px;
     margin: auto;
     padding: 20px;
     font-size: 11px;
@@ -603,9 +602,9 @@ footer{
     background: var(--preto);
 }
 footer .menu-footer a{display: none;
-    color: var(--amarelo);
+    color: var(--laranja);
 }
-footer img{background: rgb(255, 217, 0);
+footer img{background: rgba(255, 217, 0, 0);
     width: 100px;     
     height: 100px;
     margin: auto;
@@ -613,5 +612,5 @@ footer img{background: rgb(255, 217, 0);
     border-radius: 5px;
 }
 footer .rodape a{
-    color: var(--amarelo);
+    color: var(--laranja);
 }
