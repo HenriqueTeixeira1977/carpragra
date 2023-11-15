@@ -4,7 +4,290 @@
 
 /*  TABLETS (horizontal) - NOTEBOOKS */
 @media screen and (min-width: 769px) and (max-width: 1366px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins";
+        text-decoration: none;
+        list-style: none;
+        scroll-behavior: smooth;
+        transition: all .1s ease;
+    }    
     body{
-        background: red;
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
+        margin: auto;
+        padding: 0;    
+    }
+    :root{
+        --cinza: #4A4A4A;
+        --laranja: #FFC400;
+        --verde: #29A71A;
+        --preto: #000000;
+        --branco: #FFFFFF;  
+        --fontam6: clamp(1.6em, 1.5em + 3vw, 6rem);
+        --fontam5: clamp(1.5em, 1.1em + 2.3vw, 5rem);
+        --fontam4: clamp(1.3em, 1em + 2vw, 4rem);
+        --fontam3: clamp(1.1em, 1em + 1.5vw, 2rem);
+        --fontam2: clamp(1.05em, 1em + 1vw, 1.5rem);
+        --fontam1: clamp(1em, 1em + 1vw, 1rem);
+    }    
+    /*  Fim do Body  */
+    /*  *************************************************** */
+    /*  Inicio do Main / Header  */
+    header{
+        background: rgba(17, 17, 17, 0.453);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100vw;
+        height: 80px;
+        margin: auto;
+        padding: 0 7%;
+        /*  FIXANDO O HEADER  */
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    header .logo-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        margin: auto;
+    }
+    header .logo-txt{
+        display: none;
+    }
+    header nav .btn{
+        display: none;
+    }
+    header .btn {
+        display: none;
+    }
+    header nav .menu-diferenciais {
+        display: none;
+    }
+    header nav a {
+        margin: 0px;
+        padding: 0 7px;
+        font-size: var(--fontam1);
+        color: var(--branco);        
+    }
+    header nav a:hover{
+        color: var(--laranja);
+        border-bottom: #FFD401 solid 2px;
+        transition: all .45s ease;
+    }
+    header .button{
+        background: var(--verde);
+        padding: 7px 20px;
+        border: 2px solid var(--laranja);
+        border-radius: 10px;
+        font-size: var(--fontam1);
+        font-weight: 500;
+        color: var(--branco);
+    }
+    /*EFEITO STICKY - Trasição  */
+    header.sticky{
+        height: 70px;
+        background: var(--preto);
+        box-shadow: 0px 5px 5px 0px #00000093;
+        border-bottom: var(--laranja) solid 5px;
+        transition: all .2s ease;
+    }
+    /*  Fim do Header/Nav  */
+    /*  *************************************************** */
+    /*  Inicio do Main  */
+    /*  Inicio do Section - Home  */
+    main .home{background: rgba(255, 0, 0, 0);
+        height: 100vh;
+        margin: auto;
+        padding: 80px 0;
+    }
+    main .home .container {background: #ffd50100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 85%;
+        height: 600px;
+        margin: auto;
+    }
+    main .home .container article{background: rgba(0, 128, 0, 0);
+        width: 65%;
+        z-index: 100;
+    }
+    main .home .container  article h1{
+        font-size: var(--fontam6);
+        line-height: 1;
+        font-weight: 300;
+        color: var(--branco);
+    }
+    main .home .container article h1 span{
+        font-size: var(--fontam5);
+        line-height: 1;
+        color: var(--laranja);
+    }
+    main .home .container article h2{
+        font-size: var(--fontam3);
+        font-weight: 200;
+        color: var(--branco);
+    }
+    main .home .container article h3{
+        font-size: var(--fontam2);
+        font-weight: 200;
+        color: var(--branco);
+    }
+    main .home .container article .botoes{background-color: rgba(0, 0, 0, 0);
+        margin: 0px 0;
+        padding: 00px 0;
+    }
+    main .home .container article .botoes .btn-wa {background-color: rgba(144, 144, 144, 0);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 80px;
+    }
+    main .home .container article .botoes .btn-wa a{
+        background: var(--verde);
+        padding: 10px 80px;
+        border: 2px solid var(--branco);
+        border-radius: 5px;
+        font-size: var(--fontam2);
+        font-weight: 500;
+        color: var(--branco);
+    }
+    main .home .container article .botoes .btn-wa a:hover{
+        background: #10a100;
+    }
+    main .home .container article .botoes .btn-phone {background-color: rgba(144, 144, 144, 0);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 80px;
+    }
+    main .home .container article .botoes .btn-phone a{
+        background: var(--laranja);
+        padding: 10px 50px;
+        border: 2px solid var(--branco);
+        border-radius: 5px;
+        font-size: var(--fontam2);
+        font-weight: 500;
+        color: var(--preto);
+    }
+    main .home .container article .botoes .btn-phone a:hover{
+        background: var(--cinza);
+        color: var(--branco);
+    }
+    main .home .container aside{background: #10a10000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 500px;
+    }
+
+    /*  Fim do Home  */
+    /*  *************************************************** */
+    /*  Inicio do Home2  */
+    main .home2 {background: #ffc40000;
+        height: 40vh;
+        text-align: center;
+    }
+    main .home2 h1 {background: rgba(255, 0, 0, 0);
+        width: 90vw;
+        font-size: var(--fontam4);
+        text-align: center;
+    }
+    main .home2 h1 span {
+        color: var(--laranja);
+    }
+    main .home2 p {background: #10a10000;
+        width: 85vw;
+        margin: auto;
+        padding: 20px;
+        font-size: var(--fontam2);
+    }
+    
+    /*  Fim do Home2  */
+    /*  *************************************************** */
+    /*  Inicio do Soluções  */
+    main .solucoes {background: #28a71a00;
+        height: 100vh;
+        padding: 80px 0 0 0;
+        text-align: center;
+    }
+    main .solucoes h1 {
+        font-size: var(--fontam4);        
+    }
+    main .solucoes h1 span {
+        color: var(--laranja);
+    }
+    main .solucoes .container {background: #ffffff00;
+        max-width: 85%;
+        margin: auto;
+    }
+    main .solucoes .container .row-one {background: #ffc40000;
+        display: flex;
+        height: 700px;
+        margin-top: 50px;
+        padding: 20px;
+    }
+    main .solucoes .container .row-one .box {background: rgba(0, 0, 0, 0.339);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+        padding: 25px;
+        border-radius: 10px;
+    }
+    main .solucoes .container .row-one .box:hover {background: rgba(255, 200, 0, 0.339);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+        padding: 25px;
+        border-radius: 10px;
+        transform: translateY(-8px);
+    }
+    main .solucoes .container .row-one .box .txt {background: #00000000;
+        height: 90%;
+        margin: 10px 0;
+    }
+    main .solucoes .container .row-one .box i {background: rgba(255, 255, 0, 0);
+        margin: 20px;
+        padding: 30px;
+        font-size: 100px;
+    }
+    main .solucoes .container .row-one .box h2 {background: rgba(0, 255, 89, 0);
+        margin: 0 20px;
+        padding: 0px;
+        font-size: 30px;
+        line-height: 1;
+    }
+    main .solucoes .container .row-one .box p {background: rgba(8, 0, 255, 0);
+        margin: 5px 0;
+        padding: 0px;
+        font-size: 19px;
+        line-height: 1;
+    }
+    main .solucoes .container .row-one .box .btn a {background: rgba(255, 25, 0, 0);
+        padding: 10px 40px;
+        font-size: 21px;
+        line-height: 1;
+        color: var(--preto);
+        border-radius: 10px;
+        border: #000000 solid 2px;
+    }
+    main .solucoes .container .row-one .box .btn a:hover {background: rgb(0, 0, 0);
+        color: var(--branco);
+        border-radius: 10px;
+        border: #000000 solid 2px;
     }
 }
