@@ -360,7 +360,7 @@ nav a{
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    height:;
+    height:auto;
     margin: auto;  
     padding: 0 10px;  
 }
@@ -592,7 +592,7 @@ footer{background: var(--verde);
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     height: 250px;
     margin: auto;
     padding: 20px;
