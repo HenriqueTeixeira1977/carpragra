@@ -3,7 +3,7 @@
 
 
 /*  TABLETS (horizontal) - NOTEBOOKS */
-@media screen and (min-width: 769px) and (max-width: 1366px) {
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
     *{
         margin: 0;
         padding: 0;
@@ -105,7 +105,7 @@
     /*  Inicio do Main  */
     /*  Inicio do Section - Home  */
     main .home{background: rgba(255, 0, 0, 0);
-        height: 100vh;
+        height: 900px;
         margin: auto;
         padding: 80px 0;
     }
@@ -228,66 +228,123 @@
         color: var(--laranja);
     }
     main .solucoes .container {background: #ffffff00;
-        max-width: 85%;
+        width: 100%;
+        height: 100vh;
         margin: auto;
     }
-    main .solucoes .container .row-one {background: #ffc40000;
+    main .solucoes .container .row-one {background: #a4a4a400;
         display: flex;
-        height: 700px;
-        margin-top: 50px;
-        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width:90%;
+        height: 800px;
+        margin-top: 30px;
+        margin: auto;
+        padding: 0px;
     }
-    main .solucoes .container .row-one .box {background: rgba(0, 0, 0, 0.339);
+    main .solucoes .container .row-one .box {background: rgba(0, 0, 0, 0.441);
         display: flex;
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
+        width: 33%;
+        height: 600px;
         margin: 10px;
-        padding: 25px;
+        padding: 5px;
         border-radius: 10px;
+        border: var(--laranja) solid 2px;
+        box-shadow: #000000 5px 5px 10px;
     }
-    main .solucoes .container .row-one .box:hover {background: rgba(255, 200, 0, 0.339);
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-direction: column;
-        margin: 10px;
-        padding: 25px;
-        border-radius: 10px;
+    main .solucoes .container .row-one .box:hover {background: rgba(255, 200, 0, 0.517);
+        color: var(--preto);
         transform: translateY(-8px);
     }
-    main .solucoes .container .row-one .box .txt {background: #00000000;
+    main .solucoes .container .row-one .box .txt {background: #ff000000;
+        width: 95%;
         height: 90%;
-        margin: 10px 0;
+        margin: 0px 0;
+        padding: 10px;
     }
     main .solucoes .container .row-one .box i {background: rgba(255, 255, 0, 0);
         margin: 20px;
         padding: 30px;
-        font-size: 100px;
+        font-size: 90px;
+        color: var(--branco);
+
     }
     main .solucoes .container .row-one .box h2 {background: rgba(0, 255, 89, 0);
         margin: 0 20px;
         padding: 0px;
         font-size: 30px;
         line-height: 1;
+        color: var(--laranja);
     }
     main .solucoes .container .row-one .box p {background: rgba(8, 0, 255, 0);
-        margin: 5px 0;
+        margin: 10px 0 0 0;
         padding: 0px;
         font-size: 19px;
         line-height: 1;
+        color: var(--branco);
     }
     main .solucoes .container .row-one .box .btn a {background: rgba(255, 25, 0, 0);
+        margin: 50px 0;
         padding: 10px 40px;
         font-size: 21px;
         line-height: 1;
-        color: var(--preto);
+        color: var(--branco);
         border-radius: 10px;
         border: #000000 solid 2px;
+        
     }
     main .solucoes .container .row-one .box .btn a:hover {background: rgb(0, 0, 0);
         color: var(--branco);
         border-radius: 10px;
         border: #000000 solid 2px;
     }
+    
+    /*  Fim da Sessão Soluções  */
+    /*  *************************************************** */
+    /*  Inicio da Sessão Diferenciais  */
+    main .diferenciais {background: #28a71a00;
+        height: 100vh;
+        padding: 80px 0 0 0;
+        text-align: center;
+    }
+    /*  Fim da Sessão Diferenciais  */
+    /*  *************************************************** */
+    /*  Inicio da Sessão Trabalhos  */
+    main .trabalhos {background: #28a71a00;
+        height: 100vh;
+        padding: 80px 0 0 0;
+        text-align: center;
+    }
+    /*  Fim da Sessão Trabalhos  */
+    /*  *************************************************** */
+    /*  Inicio da Sessão Sobre  */
+    main .sobre {background: #28a71a00;
+        height: 100vh;
+        padding: 80px 0 0 0;
+        text-align: center;
+    }
+    /*  Fim da Sessão Sobre  */
+    /*  *************************************************** */
+    /*  Inicio da Sessão Contatos  */
+    main .contatos {background: #28a71a00;
+        height: 100vh;
+        padding: 80px 0 0 0;
+        text-align: center;
+    }
+
+    /*  Fim da Sessão Contatos  */
+    /*  *************************************************** */
+    /*  Inicio do Footer  */
+    footer {background: #28a71a00;
+        height: 100vh;
+        padding: 80px 0 0 0;
+        text-align: center;
+    }
+
+
+
 }

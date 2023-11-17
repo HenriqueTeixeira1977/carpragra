@@ -4,7 +4,7 @@
 
 /*  Mobile First  */
 /*  Mobile - iPhone 13 Mini  */
-@media (max-width: 768px){
+@media (max-width: 1023px){
     /*
     * {
         margin: 0;
@@ -353,21 +353,28 @@
     .solucoes h1 span{
         color: var(--laranja);
     }
-    .solucoes .container{
+    .solucoes .container{background: rgba(255, 0, 0, 0);
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        flex-wrap: wrap;
         width: 100%;
         height:auto;
         margin: auto;  
         padding: 0 10px;  
     }
-    .solucoes .container .row-one .box{ background: #8f8f8f;
+    .solucoes .container .row-one {background: #28a71a00;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+    .solucoes .container .row-one .box{ background: #ff000000;
         background: var(--branco);
-        max-width: 500px;
-        width: 400px;
+        max-width: 700px;
+        width: 90%;
         margin: 30px 0;
         padding: 50px;
         border-radius: 10px;
