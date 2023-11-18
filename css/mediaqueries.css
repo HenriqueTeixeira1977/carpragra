@@ -105,6 +105,7 @@
     /*  Inicio do Main  */
     /*  Inicio do Section - Home  */
     main .home{background: rgba(255, 0, 0, 0);
+        display: flex;    
         height: 900px;
         margin: auto;
         padding: 80px 0;
