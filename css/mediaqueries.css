@@ -37,7 +37,7 @@
     /*  *************************************************** */
     /*  Inicio do Main / Header  */
     header{
-        background: rgba(17, 17, 17, 0.453);
+        background: rgba(17, 17, 17, 0);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -105,8 +105,12 @@
     /*  Inicio do Main  */
     /*  Inicio do Section - Home  */
     main .home{background: rgba(255, 0, 0, 0);
+        background: url(../img/bg_1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         display: flex;    
-        height: 900px;
+        height: 100vh;
         margin: auto;
         padding: 80px 0;
     }
@@ -501,7 +505,7 @@
         height: 90%;
     }
     main .sobre .container aside img{
-        width: 70%;
+        width: 100%;
     }
     /*  Fim da Sessão Sobre  */
     /*  *************************************************** */
