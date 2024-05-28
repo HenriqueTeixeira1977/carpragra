@@ -5,64 +5,6 @@
 /*  Mobile First  */
 /*  Mobile - iPhone 13 Mini  */
 @media (max-width: 1023px){
-    /*
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box; 
-        font-family: "Poppins", sans-serif;
-        text-decoration: none;
-        text-align: center;
-        list-style: none;
-        scroll-behavior: smooth;
-        transition: all .3s ease;
-    }
-    body{
-        background: rgb(75, 75, 75);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin: auto;
-        text-align: center;
-        color: white;
-    }
-    header{background: green;
-        display: block;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        width: 100vw;
-        height: 100vh;
-        color: white;
-    }
-    header .logo .logo-img{
-        display: block;
-    }
-    nav {background: red;
-        display: block;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    nav a{background: yellow;
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        margin: 10px 0;
-        padding: 10px 0;
-        font-size: 24px;
-    }
-    main{background: yellow;
-        width: 100vw;
-        height: 10px;
-    }
-    footer{background: blue;
-        width: 100vw;
-        height: 10px;
-        
-    }
-    */
 
     *{
         margin: 0;
@@ -94,7 +36,7 @@
     /*  Fim do Body  */
     /*  *************************************************** */
     /*  Inicio do Main / Header  */
-    header{background: rgba(0, 0, 0, 0);  
+    header{background: rgba(255, 209, 3, 0);  
         z-index: 999;
         position: fixed;
         top: 0;
@@ -170,27 +112,20 @@
         font-size: var(--fontam4);
         color: var(--laranja);
     }
-    .logo { /*background: rebeccapurple;*/
+    .logo {background: rgba(102, 51, 153, 0);
         display: flex;
         align-items: center;
         flex-direction: row;
         width: 50%;
         height: 60px;
     }
-    .logo a img{ /*background: #29A71A;*/
+    .logo a img{background: #28a71a00;
+        max-width: 250px;
+        width: 90%;
+        margin: 10px 0;
+    }
+    header .logo .logo-txt{
         display: none;
-        max-width: 50px;
-        margin: 30px 0;
-    }
-    .logotipo{ background: rgba(255, 0, 0, 0);
-        display: flex;
-        font-size: var(--fontam3);
-        color: var(--branco);
-        margin: 0 5px;
-        line-height: 1;
-    }
-    .logotipo span{
-        color: var(--laranja);
     }
     nav a{ 
         display: none;    
@@ -198,11 +133,9 @@
     .menu-diferenciais {
         display: none;
     }
-    /*
     .menu-trabalhos {
-        display: none;
-    }
-    */
+        display: none;  
+    }    
     .menu-depoimentos {
         display: none;
     }
@@ -213,7 +146,7 @@
     /*  Fim do Main  */
     /*  *************************************************** */
     /*  Inicio do Home  */
-    .home{ background: rgb(0, 0, 0);
+    .home{ background: rgba(0, 0, 0, 0);
         /*background: url(../img/bg1-home-mbl.webp);
         background-position: center;
         background-repeat: no-repeat;
@@ -222,7 +155,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        width: 95vw;
         height: 100vh;
         margin: auto;
     }
@@ -239,8 +171,8 @@
         height: 80%;
         border-radius: 10px;
     }
-    .home .container aside img{background: rgb(255, 255, 255);
-        display: none;
+    .home .container aside img{background: rgba(255, 255, 255, 0);
+        width: 50%;
         margin: auto;    
         padding: 80px 0 0 0;
         border-radius: 5px;
@@ -308,7 +240,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         margin: auto;
         padding: 0 50px;
@@ -433,7 +365,8 @@
         padding: 0px 0;
         font-size: 18px;
         line-height: 1;
-    }/*
+    }
+    /*
     .trabalhos .container-galeria{ background: yellow;   
         display: flex;
         flex-wrap: wrap;
@@ -552,7 +485,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 100vh;
         text-align: center;
         padding: 30px;
     }
@@ -593,28 +525,26 @@
     /*  Fim do Contatos  */
     /*  *************************************************** */
     /*  Inicio do Footer  */
-    footer{background: var(--verde);
+    footer{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 100vw;
-        height: 250px;
+        width: 100%;
+        height: 350px;
         margin: auto;
         padding: 20px;
         font-size: 11px;
         text-align: center;
         color: var(--branco);
-        background: var(--preto);
+        background: black;
     }
     footer .menu-footer a{display: none;
         color: var(--laranja);
     }
-    footer img{background: rgba(255, 217, 0, 0);
-        width: 100px;     
-        height: 100px;
-        margin: auto;
-        padding: auto;
+    footer img{background: rgba(243, 224, 118, 0);
+        margin: 5%;
+        width: 50%;     
         border-radius: 5px;
     }
     footer .rodape a{
