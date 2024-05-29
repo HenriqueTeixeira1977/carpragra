@@ -68,7 +68,7 @@
         height: 50%;
     }
     header .logo .logo-img a img{
-        width: 100%;
+        width: 60%;
     }    
     header .logo-txt{
         display: none;
@@ -225,7 +225,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 40vh;
         text-align: center;
     }
     main .home2 .box{background: rgb(255, 255, 255);
@@ -233,27 +232,38 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 600px;
-        height: 300px;
-        padding: 60px;
-        border: #00000000 solid 2px;
+        width: 700px;
+        height: 400px;
+        padding: 30px;
         text-align: center;
         border-radius: 10px;
         box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.516);
     }
     main .home2 h1 {background: rgba(255, 0, 0, 0);
-        width: 90vw;
-        font-size: var(--fontam4);
+        width: 90%;
+        font-size: 3rem;
         text-align: center;
     }
     main .home2 h1 span {
         color: var(--laranja);
     }
     main .home2 p {background: #10a10000;
-        padding: 20px;
-        font-size: 1.1rem;
+        padding: 0px;
+        font-size: 1.2rem;
         text-align: center;
+        margin-bottom: 20px;
     }    
+    main .home2 a{
+        padding: 1px 30px;
+        color: rgb(0, 0, 0);
+        border-radius: 5px;border: #000000 solid 2px;
+        background: rgba(0, 128, 0, 0);
+        cursor: pointer;
+    }
+    main .home2 a:hover{
+        background: #000000;
+        color: white;
+    }
     /*  Fim do Home2  */
     /*  *************************************************** */
     /*  Inicio do Soluções  */

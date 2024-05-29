@@ -257,8 +257,19 @@
         color: var(--laranja);
     }
     .home2 p{
+        margin-bottom: 30px;
         font-size: var(--fontam3);
         color: var(--branco);
+    }
+    .home2 a{
+        padding: 2px 30px;
+        background: black;
+        color: white;
+        border-radius: 5px;
+    }
+    .home2 a:hover{
+        color: black;
+        background: white;
     }
     /*  Fim do Home2  */
     /*  *************************************************** */
