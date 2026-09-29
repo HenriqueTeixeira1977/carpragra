@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://www.carretospraiagrande.com.br/sitemap.xml
+Disallow: /assets/
+Sitemap: https://carretospraiagrande.com.br/sitemap.xml
