@@ -41,7 +41,7 @@
 ## 4. Mapa de palavras-chave
 | Página | Palavra principal | Variações |
 |---|---|---|
-| Início | carretos em Praia Grande | frete Praia Grande, carreto Baixada Santista |
+| Início | transporte de motos em Praia Grande | carretos em Praia Grande, frete Praia Grande, carreto Baixada Santista |
 | /fretes-e-carretos-praia-grande/ | frete em Praia Grande | carreto, entrega de móveis, frete de eletrodomésticos, pequenos volumes |
 | /pequenas-mudancas-praia-grande/ | pequenas mudanças Praia Grande | mudança de kitnet, mudança pequena, carreto para mudança |
 | /mudancas-residenciais-praia-grande/ | mudança residencial Praia Grande | mudança de apartamento, mudança de casa |

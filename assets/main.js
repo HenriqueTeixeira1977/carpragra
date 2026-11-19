@@ -97,4 +97,25 @@
       box.appendChild(el);
     });
   }
+
+  /* ---- Formulário rápido de transporte de moto (hero) -> WhatsApp ---- */
+  var mf = document.getElementById('motoForm');
+  if (mf) {
+    mf.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var f = mf.elements, first = null;
+      ['modelo', 'origem', 'destino'].forEach(function (n) {
+        var el = f[n], empty = !el.value.trim();
+        el.classList.toggle('err', empty);
+        if (empty && !first) { first = el; }
+      });
+      if (first) { first.focus(); return; }
+      var msg = 'Olá! Vim pelo site e quero um orçamento de transporte de moto.\n' +
+        'Moto: ' + f.modelo.value.trim() + '\n' +
+        'Retirada: ' + f.origem.value.trim() + '\n' +
+        'Entrega: ' + f.destino.value.trim();
+      track('moto_form_whatsapp');
+      window.open('https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+    });
+  }
 })();
